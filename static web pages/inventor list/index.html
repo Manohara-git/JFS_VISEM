@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Language Inventors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="title">Programming Language Inventors</h1>
+
+    <!-- Dropdown Filter -->
+    <div class="dropdown-container">
+        <select id="inventorDropdown">
+            <option value="">Select Inventor</option>
+            <option value="James Gosling">James Gosling</option>
+            <option value="Guido van Rossum">Guido van Rossum</option>
+            <option value="Dennis Ritchie">Dennis Ritchie</option>
+            <option value="Bjarne Stroustrup">Bjarne Stroustrup</option>
+            <option value="Brendan Eich">Brendan Eich</option>
+            <option value="Rasmus Lerdorf">Rasmus Lerdorf</option>
+            <option value="Yukihiro Matsumoto">Yukihiro Matsumoto</option>
+            <option value="John McCarthy">John McCarthy</option>
+            <option value="Grace Hopper">Grace Hopper</option>
+            <option value="Ken Thompson">Ken Thompson</option>
+        </select>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Search inventor or language...">
+        <button id="reset">Reset</button>
+    </div>
+
+    <!-- Grid of Inventors -->
+    <div id="grid" class="grid"></div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="modalClose" class="close">&times;</span>
+            <div id="modalAvatar" class="avatar"></div>
+            <h2 id="modalName"></h2>
+            <h4 id="modalLangs"></h4>
+            <p id="modalBio"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
